@@ -34,7 +34,7 @@ namespace Notro_Player
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSelect = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,7 +63,7 @@ namespace Notro_Player
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectToolStripMenuItem,
+            this.btnSelect,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.settingToolStripMenuItem,
@@ -79,10 +79,11 @@ namespace Notro_Player
             this.listBox1.Name = "listBox1";
             this.listBox1.TabStop = false;
             // 
-            // selectToolStripMenuItem
+            // btnSelect
             // 
-            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            resources.ApplyResources(this.selectToolStripMenuItem, "selectToolStripMenuItem");
+            this.btnSelect.Name = "btnSelect";
+            resources.ApplyResources(this.btnSelect, "btnSelect");
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -131,7 +132,7 @@ namespace Notro_Player
         private System.Windows.Forms.ListBox listBox1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnSelect;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;

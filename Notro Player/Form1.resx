@@ -127,10 +127,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 0</value>
+    <value>429, 0</value>
   </data>
   <data name="listBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>393, 413</value>
+    <value>403, 413</value>
   </data>
   <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -218,10 +218,10 @@
   <data name="menuStrip1.AutoSize" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="selectToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnSelect.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 36</value>
   </data>
-  <data name="selectToolStripMenuItem.Text" xml:space="preserve">
+  <data name="btnSelect.Text" xml:space="preserve">
     <value>Select</value>
   </data>
   <data name="editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -296,10 +296,10 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
   </data>
-  <data name="&gt;&gt;selectToolStripMenuItem.Name" xml:space="preserve">
-    <value>selectToolStripMenuItem</value>
+  <data name="&gt;&gt;btnSelect.Name" xml:space="preserve">
+    <value>btnSelect</value>
   </data>
-  <data name="&gt;&gt;selectToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnSelect.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;editToolStripMenuItem.Name" xml:space="preserve">
