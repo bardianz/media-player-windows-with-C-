@@ -18,9 +18,9 @@ namespace Notro_Player
             this.AllowDrop = true;
             this.DragEnter += new DragEventHandler(Form1_DragEnter);
             this.DragDrop += new DragEventHandler(Form1_DragDrop);
-            listBox1.AllowDrop = true;
-            listBox1.DragEnter += new DragEventHandler(Form1_DragEnter);
-            listBox1.DragDrop += new DragEventHandler(Form1_DragDrop);
+            axWindowsMediaPlayer1.AllowDrop = true;
+            ////axWindowsMediaPlayer1.DragEnter += new DragEventHandler(Form1_DragEnter);
+            ////axWindowsMediaPlayer1.DragDrop += new DragEventHandler(Form1_DragDrop);
         }
 
         void Form1_DragEnter(object sender, DragEventArgs e)
@@ -30,9 +30,35 @@ namespace Notro_Player
 
         void Form1_DragDrop(object sender, DragEventArgs e)
         {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            foreach (string file in files) MessageBox.Show(file);
+            file = (string[])e.Data.GetData(DataFormats.FileDrop);
+            path = (string[])e.Data.GetData(DataFormats.FileDrop);
+            play();
+        }
+        string[] path, file;
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1;
+            openFileDialog1 = new OpenFileDialog();
+            //openFileDialog1.Multiselect = true;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                file = openFileDialog1.SafeFileNames;
+                path = openFileDialog1.FileNames;
+                play();
+            }
+
         }
 
+        private void play()
+        {
+            try
+            {
+                axWindowsMediaPlayer1.URL = path[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

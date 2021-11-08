@@ -13,3 +13,6 @@ D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\bi
 D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\obj\Debug\Interop.WMPLib.dll
 D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\obj\Debug\AxInterop.WMPLib.dll
 D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\obj\Debug\Notro Player.csproj.ResolveComReference.cache
+D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\bin\Debug\aa\Notro Player.resources.dll
+D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\obj\Debug\Notro_Player.Form1.aa.resources
+D:\Projects\Visual Studio\Notro Player\Notro Player\Notro Player\Notro Player\obj\Debug\aa\Notro Player.resources.dll
